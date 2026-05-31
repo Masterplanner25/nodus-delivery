@@ -6,13 +6,18 @@ build-backend = "setuptools.build_meta"
 name = "nodus-delivery"
 version = "0.1.0"
 description = "Outbound routing, chunking, and delivery planning for multi-channel AI systems"
+authors = [{ name = "Shawn Knight" }]
+license = { text = "MIT" }
+readme = "README.md"
 requires-python = ">=3.11"
-license = "MIT"
-authors = [{ name = "Masterplanner25" }]
 dependencies = ["nodus-channels>=0.1.0"]
 
 [project.optional-dependencies]
-test = ["pytest>=8.0", "pytest-asyncio>=0.21"]
+dev = ["pytest>=8.0", "pytest-asyncio>=0.21"]
+
+[project.urls]
+Homepage = "https://github.com/Masterplanner25/nodus-delivery"
+Repository = "https://github.com/Masterplanner25/nodus-delivery"
 
 [tool.setuptools.packages.find]
 where = ["."]
@@ -20,3 +25,4 @@ include = ["nodus_delivery*"]
 
 [tool.pytest.ini_options]
 asyncio_mode = "auto"
+testpaths = ["tests"]
