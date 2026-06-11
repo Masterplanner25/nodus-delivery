@@ -7,7 +7,7 @@ channel-appropriate chunks, and delivers each chunk in order. Depends on
 [nodus-channels](https://github.com/Masterplanner25/nodus-channels) for the
 `ChannelRegistry` and `ChannelAdapter` protocol.
 
-> **Status:** v0.1.0 — prepared, not yet published.
+> **Status:** v0.1.0 — published on [PyPI](https://pypi.org/project/nodus-delivery/).
 
 ---
 
